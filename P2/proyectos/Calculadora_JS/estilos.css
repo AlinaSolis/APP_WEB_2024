@@ -1,13 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 
 body{
+    background-color: url(img/img2.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vmax;
+}   
+.contenedor{
+    width: 80px;
+    margin: 0 auto;
+    max-width: 1920px;
+}   
+h2{
+    padding-top: 30vw;
+    padding-bottom: 30vw;
+    color: white;
+    text-align: center;
+    font-stretch: normal;
+    /*para hacerlo responcible vw*/
+    font-size: 4vw;
+}
+form{
+    text-align: center;
+    color: white;
+} 
+label{
+    /*en equivale a 16 pero em mejor el vw*/
+   font-size: 2vw;
+}
+/*Estilo de Aliiiii Ali*/
+/*body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     
     background-size: cover;
     background: linear-gradient(rgba(5, 7, 12, 0.17), rgba(5, 7, 12, 0.75)),url(img/img1.jpg) no-repeat center center fixed ;
-    /*Lo que realice pero mas corto
-    background-repeat: no-repeat center center fixed;
+    /*Lo que realice pero mas corto*/
+    /*background-repeat: no-repeat center center fixed;
     background-size: cover;*/
     /*background-image: url(img/img1.jpg);
     /*Para que la imagen no se repita por lo que esta chiquita*/
@@ -15,10 +48,12 @@ body{
     /*Para hacer mas grande la pocicion*/
     /*background-position: 50px 25px; la centramos y jugamos por los px y la centramos*/
     /*propiedad fija fixed
-    */
+    
     /*background-attachment: fixed;
-    background-position: center center;*/
-}
+    background-position: center center;
+}*/
+
+
 section{
     position: absolute;
     top: 50%;
@@ -53,3 +88,21 @@ button{
     cursor: pointer;
     float: right;
 }
+h2{
+    padding-top: 30vw;
+    padding-bottom: 30vw;
+    color: white;
+    text-align: center;
+    font-stretch: normal;
+    /*para hacerlo responcible vw*/
+    font-size: 4vw;
+}
+form{
+    text-align: center;
+    color: white;
+} 
+label{
+    /*en equivale a 16 pero em mejor el vw*/
+    font-size: 2vw;
+}
+    
