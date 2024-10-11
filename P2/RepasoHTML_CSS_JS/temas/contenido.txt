@@ -1,0 +1,23 @@
+Estos son los temas de HTML REPASO
+**HTML**
+1'HTML. Que es y como funciona?
+2'Etiquetas
+3'Estructura basica de una pagina web
+4'Textos
+5'Listas
+6'Imagenes
+7'Formularios
+8´Tablas
+8'Enlaces o hipervinculos
+
+*CSS*
+9'CSS
+
+*JS*
+10'Java Script
+11´contenido extendido
+
+HTML es un lenguaje estandar utilizado para crear y estructurar paginas web. No es un lenguaje de programacion, si no un lenguaje de marcado, lo que significa que su principal funcion es organizar y definir el contenido de una pagina web mediante etiquetas.
+Es el lenguaje estándar utilizado para crear y estructurar páginas web.
+No es un lenguaje de programación, si no un lenguaje marcado
+Su principal función es organizar y definir el contenido de una página web
