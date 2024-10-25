@@ -1,0 +1,63 @@
+<!--Registrar nuevo deudor-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registro de nuevo deudor</title>
+ 
+</head>
+<body>
+    <div class="formulario">
+       <div class="titulo">Registro de nuevo deudor</div>
+      <form action="#">
+        <div class="secundaria">
+            <samp>Datos</samp>
+            <input type="text" spellcheck="false" required  >
+            <label>Nombre</label>
+        </div>
+
+        
+        <div class="secundaria">
+            <input type="text" spellcheck="false" required  >
+            <label>Apellido Paterno</label>
+        </div>
+
+        <div class="secundaria">
+            <input type="text" spellcheck="false" required  >
+            <label>Apellido Materno</label>
+        </div>
+
+        <div class="secundaria">
+            <span>Contactos</span>
+            <input type="number" spellcheck="false" required  >
+            <label>Telefono</label>
+        </div>
+
+        <div class="secundaria">
+            
+            <input type="text" spellcheck="false" required  >
+            <label>Direccion</label>
+        </div>
+
+        <div class="secundaria">
+            <samp>Informacion de la deuda</samp>
+            <input type="number" spellcheck="false" required  >
+            <label>Deuda Total</label>
+        </div>
+
+        <div class="select">
+            <select name="format" id="format">
+                <samp>Estatus</samp>
+      <option value="">Pendiente</option>
+      <option value="">Pagado</option>
+  </select>
+  <button class="botton">Registrar Deudores</button>        
+
+      </form>
+       
+       
+    </div>
+</body>
+</html>
