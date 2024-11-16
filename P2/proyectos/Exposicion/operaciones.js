@@ -21,8 +21,8 @@ function closeSidebar() {
 const barChartOptions = {
   series: [
     {
-      data: [10, 8, 6, 4, 2],
-      name: 'Products',
+      data: [10, 8, 6, 4, 2, 2, 2],
+      name: 'Productos',
     },
   ],
   chart: {
@@ -33,7 +33,7 @@ const barChartOptions = {
       show: false,
     },
   },
-  colors: ['#2962ff', '#d50000', '#2e7d32', '#ff6d00', '#583cb3'],
+  colors: ['#063970', '#fff', '#063970', '#fff', '#063970','#fff'],
   plotOptions: {
     bar: {
       distributed: true,
@@ -79,7 +79,7 @@ const barChartOptions = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+    categories: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'],
     title: {
       style: {
         color: '#f5f7ff',
@@ -101,7 +101,7 @@ const barChartOptions = {
   },
   yaxis: {
     title: {
-      text: 'Count',
+      text: 'Reporte',
       style: {
         color: '#f5f7ff',
       },
@@ -149,11 +149,7 @@ const areaChartOptions = {
       show: false,
     },
   },
-  colors: ['#00ab57', '#d50000'],
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-  dataLabels: {
-    enabled: false,
-  },
+
   fill: {
     gradient: {
       opacityFrom: 0.4,

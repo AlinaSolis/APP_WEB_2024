@@ -1,10 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #1d2634;
-    color: #9e9ea4;
-    font-family: 'Montserrat', sans-serif;
-  }
+body{
+  background: #e8e8f0;
+}
   
   .material-icons-outlined {
     vertical-align: middle;
@@ -14,12 +10,19 @@ body {
   
   .contenedor {
     display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-columns: 260px 1fr 1fr 1fr ;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
       'sidebar header header header'
       'sidebar main main main';
     height: 100vh;
+  }
+  .titulo{
+    background: #263043;
+    width: 900px;
+    display: flex;
+    display: grid;
+    
   }
   
   /* ---------- HEADER ---------- */
@@ -30,7 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px 0 30px;
-    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.643);
+    box-shadow: 0 6px 7px -3px rgba(94, 99, 163, 0.719);
   }
   
   .menu-icon {
@@ -123,21 +126,6 @@ body {
     border-radius: 5px;
   }
   
-  .card:first-child {
-    background-color: #0c2b80;
-  }
-  
-  .card:nth-child(2) {
-    background-color: #f200ff;
-  }
-  
-  .card:nth-child(3) {
-    background-color: #4f2e7d;
-  }
-  
-  .card:nth-child(4) {
-    background-color: #82c1b5;
-  }
   
   .card-inner {
     display: flex;
@@ -157,7 +145,7 @@ body {
   }
   
   .charts-card {
-    background-color: #263043;
+    background-color: #9dadce;
     margin-bottom: 20px;
     padding: 25px;
     box-sizing: border-box;
@@ -220,4 +208,70 @@ body {
       display: none;
     }
   }
+  .navbar {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .buttons button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .buttons .menu {
+    background-color: #007bff;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter input {
+    margin-right: 10px;
+}
+
+.report-section {
+    display: flex;
+    gap: 20px;
+}
+
+.chart, .report-text {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-text p {
+    margin: 0;
+}
+
   

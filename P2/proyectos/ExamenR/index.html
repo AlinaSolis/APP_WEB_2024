@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Área</title>
+</head>
+<body>
+    <h1>Calculadora de Área</h1>
+    <div>
+        <label for="figura">Elige una figura:</label>
+        <select id="figura">
+            <option value="cuadrado">Cuadrado</option>
+            <option value="rectangulo">Rectángulo</option>
+        </select>
+    </div>
+    <div>
+        <label for="ancho">Ancho:</label>
+        <input type="number" id="ancho">
+    </div>
+    <div id="alto-div" style="display: none;">
+        <label for="alto">Alto:</label>
+        <input type="number" id="alto">
+    </div>
+    <button onclick="calcularArea()">Calcular Área</button>
+    <p id="resultado"></p>
+    <img id="imagen-figura" style="display: none; max-width: 200px;">
+
+    <script>
+        document.getElementById('figura').addEventListener('change', function() {
+            const figura = this.value;
+            const imagenFigura = document.getElementById('imagen-figura');
+            if (figura === 'rectangulo') {
+                document.getElementById('alto-div').style.display = 'block';
+                imagenFigura.src = 'ruta/al/img1.png'; // Cambia a la ruta de tu imagen de rectángulo
+                imagenFigura.style.display = 'block';
+            } else {
+                document.getElementById('alto-div').style.display = 'none';
+                imagenFigura.src = 'ruta/al/cuadrado.png'; // Cambia a la ruta de tu imagen de cuadrado
+                imagenFigura.style.display = 'block';
+            }
+        });
+
+        function calcularArea() {
+            const figura = document.getElementById('figura').value;
+            const ancho = document.getElementById('ancho').value;
+            let area;
+            if (figura === 'rectangulo') {
+                const alto = document.getElementById('alto').value;
+                area = ancho * alto;
+            } else {
+                area = ancho * ancho;
+            }
+            document.getElementById('resultado').innerText = 'El área es: ' + area;
+        }
+    </script>
+</body>
+</html>
+
+

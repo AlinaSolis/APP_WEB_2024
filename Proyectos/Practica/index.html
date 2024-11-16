@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar nuevo deudor</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar nuevo deudor</h1>
+        <form id="formDeudor">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div>
+                <label for="apellido1">Apellido 1:</label>
+                <input type="text" id="apellido1" required>
+            </div>
+            <div>
+                <label for="apellido2">Apellido 2:</label>
+                <input type="text" id="apellido2" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" required>
+            </div>
+            <div>
+                <label for="deuda_total">Deuda total:</label>
+                <input type="number" id="deuda_total" required>
+            </div>
+            <div>
+                <label for="estatus">Estatus:</label>
+                <select id="estatus" required>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="pagada">Pagada</option>
+                </select>
+            </div>
+            <button type="submit">Registrar deudor</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('formDeudor').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const apellido1 = document.getElementById('apellido1').value;
+            const apellido2 = document.getElementById('apellido2').value;
+            const telefono = document.getElementById('telefono').value;
+            const direccion = document.getElementById('direccion').value;
+            const deudaTotal = document.getElementById('deuda_total').value;
+            const estatus = document.getElementById('estatus').value;
+
+            // Aquí puedes agregar la lógica para guardar estos datos en tu backend o base de datos
+            console.log({
+                nombre,
+                apellido1,
+                apellido2,
+                telefono,
+                direccion,
+                deudaTotal,
+                estatus
+            });
+
+            alert('Deudor guardado con éxito');
+        });
+    </script>
+</body>
+</html>

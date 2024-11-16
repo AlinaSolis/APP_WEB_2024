@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+   <style>
+    input{
+        font: inherit;
+       
+    }
+    .form{
+        margin: 40px auto;
+        padding: 3rem 1.5rem;
+        background-color: aquamarine;
+        width: min(350px, 90%);
+        border-radius: 10px;
+    }
+    .form_title{
+        font-size: 2rem;
+    }
+    .form_subtitle{
+        margin-top: .7rem;
+        color: #9c9999;
+    }
+    .form_inputs{
+        margin: 2rem 0 1.5rem;
+        display: grid;
+        gap: 1.5rem;
+        color: antiquewhite;
+
+    }
+    .form_label{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "input";
+    }
+    .form_input{
+        grid-area: input;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #d7d0d0;
+        padding: .7rem 1.5rem;
+    
+    }
+    .form_text{
+        grid-area: input;
+        z-index: 100;
+
+        width: max-content;
+        height: 100%;
+        margin-left: 1rem;
+        padding: 0 .5rem;
+
+        display: flex;
+        align-items: center;
+
+        transform-origin: left center;
+        transition: transform .3s;
+
+    }
+    .form_input:focus + .form_text
+    .form_input:not(:placeholder-shown) + .form_text{
+        background-color: white;
+        transform: translateY(-50%) scale(.7);
+
+    }
+     
+   </style> 
+</head>
+<body>
+    
+</body>
+
+</html>
+<form class="form">
+    <h2 class="form_title">Registro</h2>
+    <p class="form_subtitle">JAJAJ</p>
+
+<div class="form_inputs">
+
+    <label for="nombre" class="form_label">
+        
+    <input type="text" id="nombre" placeholder=" " class="form_input">
+    <span class="form_text">Nombre</span>
+</label>
+
+<label for="nombre" class="form_label">
+        
+    <input type="text" id="nombre" placeholder=" " class="form_input">
+    <span class="form_text">Nombre</span>
+</label>
+
+</div>
+</form>

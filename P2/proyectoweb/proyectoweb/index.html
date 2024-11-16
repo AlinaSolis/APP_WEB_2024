@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="../../../Proyectos/Integradora/for1/estilos.css">
+    <link rel="stylesheet" href="../../../Proyectos/Integradora/for1/formulario.js">
     <script src="https://kit.fontawesome.com/ab4fa16bfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
@@ -32,6 +33,7 @@
                     <li><a class="btn-menu" href="#contacto">Contácto</a></li>
                 </ul>
             </div>
+            
             <div class="titular">
                 <h1>Alina Solis guereca</h1>
                 <h2>Desarrollador y Diseñador Web</h2>
@@ -39,18 +41,18 @@
             </div>
         </div> 
     </header>
-    <main>
+    <main>  </main>
         <section id="sobremi">
             <div class="contenedor">
                 <h3>Sobre Mí</h3>
                 <div class="contenedor-sobremi">
                     <img src="img/sobremi.jpg" alt="" title="Desarrollador Web">
                     <div class="contenedor-parrafo-y-boton">
-                       <p>Mi nombre es francisco javier soy estudiante de la Universidad Tecnológica de Durango, actualmente estudio en la carrera de Tecnologías de la Información, curso las materias de Aplicaciones Web.</p>
+                       <p>Mi nombre es AlinaSolis soy estudiante de la Universidad Tecnológica de Durango, actualmente estudio en la carrera de Tecnologías de la Información, curso las materias de Aplicaciones Web.</p>
                        <p>Las tecnologías de desarrollo web que actualmente utilizamos en los proyectos que se desarrollan son: HTML para la maquetación, CSS hojas de estilo para el diseño, JavaScript programación del lado del cliente, PHP como programación del lado del servidor y como Gestor de Base de Datos MariaDB o MySQL.</p>
-                       <p>Te puedes poner en contacto conmigo por e-mail: francisco_3041230320@utd.edu.mx
+                       <p>Te puedes poner en contacto conmigo por e-mail: Alina_3041230320@utd.edu.mx
                        <span class="email">
-                       <a href="mailto:francisco_3041230320@utd.edu.mx">francisco_3041230320@utd.edu.mx</a>
+                       <a href="mailto:ALI_3041230320@utd.edu.mx">Alina_3041230320@utd.edu.mx</a>
                        
                        </p>
                        <a class="btn" href="#mistrabajos">VER MIS TRABAJOS</a>
@@ -60,6 +62,7 @@
             </div>
             <a href="#inicio" class="icon-arrow-up"></a>
         </section>
+  
         <section id="servicios">
             <div class="contenedor">
                 <h3>Servicios</h3>
@@ -94,37 +97,142 @@
                         <p>Básicamente, el concepto de “autoadministrable” guarda relación con la capacidad del sitio de proveer al usuario una interfaz amigable e intuitiva para poder realizar modificaciones a su sitio. Cuando se habla de interfaces “intuitivas” significa que no requiere conocimientos previos del usuario para poder utilizarlo.</p>
                         <div class="icon-shopping-cart"></div>
                     </div>
-                    
+                </div>
                 </div>
             </div>
             <a href="#inicio" class="icon-arrow-up"></a>
         </section>
-    </main>
-    <footer id="pie">
-        <div class="contenedor">
-            <div class="burbujas">
-                <a href="https://web.whatsapp.com/send?phone=+526182331394&text=¡Buen día ...!" target="_blank" class="burbujaall">
-                    <img src="img/whatsapp.jpeg" alt="">
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=+526182331394&text=Hola+que+tal+necesito+ayuda&app_absent=0" target="_blank" class="burbujaall">
-                    <img src="img/whatsapp.jpeg" alt=""></a>
-                <a href="tel:6182331394" class="burbujaall">
-                    <img src="img/phone.jpeg" alt="">
-                </a>
-                <p>@ Derechos Reservados 2022 @</p>
+        <section id="mistrabajos">
+            <div class="contenedor">
+                <h3>Mis Trabajos</h3>
+                <div class="contenedor-sobremi">
+                   
+                    <div class="contenedor-parrafo-y-boton">
+                        <main>
+                            <form action="" class="formulario" id="formulario">
+                               <h1>Registrar Para ver mis trabajos</h1> 
+                               <hr>
+                               <!-- Grupo: Nombre -->
+                                <div class="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label">Nombre(s)</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombres" required>
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                </div>
+                                <!-- Grupo: Apellido Paterno -->
+                                <div class="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label">Apellido Paterno</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Apellido Paterno" required>
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                </div>
+                                 <!-- Grupo: Apellido Materno -->
+                                <div class="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label" >Apellido Materno</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Apellido Materno" readonly >
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                                </div>
+                                
+                               
+                                
+                                
+                                <!-- Grupo: Teléfono -->
+                                <div class="formulario__grupo" id="grupo__telefono">
+                                    <label for="telefono" class="formulario__label">Teléfono</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" required>
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                                </div>
+                              <div>
+                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                             </div>
+                          <br>    
+                    
+                                <div class="formulario__mensaje" id="formulario__mensaje">
+                                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                                </div>
+                    
+                                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                    <button type="submit" class="formulario__btn">Guardad</button>
+                                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                                </div>
+                            </form>
+                        </main>
+                     
+                    </div>
+                </div>
             </div>
-            
+            <a href="#inicio" class="icon-arrow-up"></a>
+        </section>
+
+
+
+  
+  
+
+    <section id="proyectos">
+        <div class="contenedor">
+            <h3>Como crear un proyecto de Cafeteria</h3>
+            <div class="contenedor-sobremi">
+               <a href="https://youtu.be/L3tal8ATx5o?si=O7q_vfX3lWBx8O3b">
+                <img src="img/Img2.png" alt="" title="Cafetería">
+            </a> 
+                <div class="contenedor-parrafo-y-boton">
+                   <h2>Cómo hacer un sitio web de Cafetería responsive con HTML - CSS </h2>
+                  
+                </div>
+            </div>
         </div>
-    </footer>
+        <div> <a href="#inicio" class="icon-arrow-up"></a></div> 
+        
+    </section>
+<br><br>
+    <section id="blog">
+        <div class="contenedor">
+            <h3>Blog</h3>
+            <div class="contenedor-sobremi">
+               <a href="https://youtu.be/9IsC4PLXv9w?si=f22EMLJcBkZO0OkI">
+                <img src="img/Img3.png" alt="" title="Cafetería">
+            </a> 
+                <div class="contenedor-parrafo-y-boton">
+                   <h2>Como crear un Blog con html y CSS</h2>
+                   <p>En este video, podrás seguir, paso a paso, el proceso de creación. Cada etapa está detalladamente explicada para que puedas replicarla fácilmente y obtener excelentes resultados. ¡Prepárate para aprender y aplicar nuevos conocimientos!</p>
+                  
+                </div>
+            </div>
+        </div>
+       <div> <a href="#inicio" class="icon-arrow-up"></a></div> 
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+   <section id="contacto"> 
+    <div class="contenedor">
+         <h2>Ponte en Contacto</h2> 
+         <form action="enviar.php" method="post" class="formulario"> 
+            <div class="formulario__grupo"> <label for="nombre" class="formulario__label">Nombre:</label> <div class="formulario__grupo-input"> <input type="text" class="formulario__input" name="nombre" id="nombre" required> </div> </div> <div class="formulario__grupo"> <label for="email" class="formulario__label">Correo Electrónico:</label> <div class="formulario__grupo-input"> <input type="email" class="formulario__input" name="email" id="email" required> </div> </div> <div class="formulario__grupo"> <label for="telefono" class="formulario__label">Teléfono:</label> <div class="formulario__grupo-input"> <input type="tel" class="formulario__input" name="telefono" id="telefono"> </div> </div> <div class="formulario__grupo"> <label for="mensaje" class="formulario__label">Mensaje:</label> <div class="formulario__grupo-input"> <textarea class="formulario__input" name="mensaje" id="mensaje" rows="5" required></textarea> </div> </div> <div class="formulario__grupo formulario__grupo-btn-enviar"> <button type="submit" class="formulario__btn">Enviar</button> </div> </form> </div>
+            <a href="#inicio" class="icon-arrow-up"></a>
 
     <!-- Burbujas Whatsapp y Phone -->
     <div class="callbutton">
         <div id="WAButton"></div>
         <div class="llamada">
-            <a href="tel:618" class="fas fa-phone-alt"></a>
+            <a href="tel:61812334" class="fas fa-phone-alt"></a>
         </div>
     </div>
-
+   
     <!-- Codigo para que funcione la burbuja de Whatsapp -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript"

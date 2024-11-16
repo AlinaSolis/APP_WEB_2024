@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:  rgba(103, 150, 103, 0.541);
+    
+}
+p{
+    color: #f4f4f4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: double;
+    /*Tamaño*/
+    font-size: 13px;
+    /*Tamaño del espacio*/
+    line-height: 1.7;
+}  
+h1{
+    text-align: center;
+    text-decoration: line-through;
+/*el tamaño de abajo*/
+    height: 40px;
+}
+h2{
+  text-align: center;
+  height: 28px;
+  
+} 
+
+.formulario{
+    background: rgb(207, 200, 213);
+    padding: 15px;
+    border-radius: 2px;
+    margin: 100px;
+    font-size: 15px;
+    
+
+}
+.formulario_input{
+    padding: 5px;
+    margin: 3px;
+}
+input{
+    margin: 20px;
+    border: none;
+    padding: 6px 9px;
+    border-bottom: 2px solid white;
+    background: rgb(216, 211, 219);
+    color: blueviolet;
+}
+.boton{
+    height: 40px;
+    width: 90px;
+    background-color: bisque;
+    border-radius: 6px;
+    border-width: 4px;
+  
+    
+}
+.boton:hover{
+    background-color: rgb(170, 148, 190);
+    border-width: 1px;
+}

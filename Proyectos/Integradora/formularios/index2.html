@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Registrar nuevo usuario</title>
+    <link rel="icon" href="logo.png">
+    
+</head>
+<body>
+   <header>
+    
+    <div class="form-container">
+        <div class="titulo">
+        <h1 class="form_title">Registrar nuevo usuario</h1>
+    </div>
+        <form id="usuario">
+            <h2 class="datos">Datos</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido1">Apellido Materno:</label>
+                <input type="text" id="apellido1" name="apellido1" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido2">Apellido Paterno:</label>
+                <input type="text" id="apellido2" name="apellido2" required>
+            </div>
+            <div class="form-group">
+                <h2 class="datos">Contacto</h2>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                
+                <label for="rol">Rol:</label>
+                <select id="rol" name="rol" required>
+                    <option value="empleado">Empleado</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estatus">Estatus:</label>
+                <select id="estatus" name="estatus" required>
+                    <option value="activa">Activa</option>
+                    <option value="inactiva">Inactiva</option>
+                    <option value="bloqueada">Bloqueada</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-group">Registrar usuario</button>
+            </div>
+        </form>
+    </div>
+</div>
+</header> 
+    <script>
+        document.getElementById('usuario').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const apellido1 = document.getElementById('apellido1').value;
+            const apellido2 = document.getElementById('apellido2').value;
+            const telefono = document.getElementById('telefono').value;
+            const correo = document.getElementById('correo').value;
+            const direccion = document.getElementById('direccion').value;
+            const rol = document.getElementById('rol').value;
+            const estatus = document.getElementById('estatus').value;
+
+            console.log({
+                nombre,
+                apellido1,
+                apellido2,
+                telefono,
+                correo,
+                direccion,
+                rol,
+                estatus
+            });
+
+            alert('Usuario registrado con éxito');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {%block title %}
+        para un comentario
+        {% comment %} Aqui maquetamos el bloque de titulo{% endcomment %}
+        {% endblock title%}
+    </title>
+     
+</head>
+<body>
+    <h1>Bienvenido a mi proyecto con Django</h1>
+    <h2>Desarollo de SW multiplatarorma</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi mollitia, magnam ipsam laboriosam eos at error quis, totam explicabo quidem asperiores. Dolor velit quod iste nemo explicabo eius quia.</p>
+   
+</body>
+</html>
+
+es para el otro
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {%block title %}
+        para un comentario
+        {% comment %} Aqui maquetamos el bloque de titulo{% endcomment %}
+        {% endblock title%}
+    </title>
+     
+</head>
+<body>
+    <h1>Bienvenido a mi proyecto con Django</h1>
+    <h2>Desarollo de SW multiplatarorma</h2>
+    <nav>
+        <ul>
+            <li><a href="{% url "inicio" %}">Inicio</a></li>
+            <li><a href="{% url "mision" %}">Mision</a></li>
+            <li><a href="{% url "vision" %}">Visio</a></li>
+            <li><a href="{% url "acercade" %}">Acerca de</a></li>
+        </ul>
+    </nav>
+    {}
+</body>
+</html>

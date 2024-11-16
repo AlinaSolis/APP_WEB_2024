@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Nuevo Deudor</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css_index2.css">
+    
+</head>
+<body>
+	<header>
+    <div class="container">
+        <div class="titulo">
+        <h1 class="form_title">Registrar nuevo Deudor</h1>
+    </div>
+        <form id="formDeudor">
+            <div class="form_input">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div>
+                <label for="apellidoPaterno">Apellido Paterno:</label>
+                <input type="text" id="apellidoPaterno" required>
+            </div>
+            <div>
+                <label for="apellidoMaterno">Apellido Materno:</label>
+                <input type="text" id="apellidoMaterno" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" required>
+            </div>
+            <div>
+                <label for="deudaTotal" class="form_label">Deuda Total:</label>
+                <input type="number" id="deudaTotal" required>
+            </div>
+            <div>
+                <label for="estatus">Estatus:</label>
+                <select id="estatus" required>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="pagado">Pagado</option>
+                </select>
+            </div>
+            <button  type="submit" class="form-group">Guardar</button>
+        </form>
+    </div>
+</header>
+
+    <script>
+        document.getElementById('formDeudor').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const apellidoPaterno = document.getElementById('apellidoPaterno').value;
+            const apellidoMaterno = document.getElementById('apellidoMaterno').value;
+            const telefono = document.getElementById('telefono').value;
+            const direccion = document.getElementById('direccion').value;
+            const deudaTotal = document.getElementById('deudaTotal').value;
+            const estatus = document.getElementById('estatus').value;
+
+            console.log({
+                nombre,
+                apellidoPaterno,
+                apellidoMaterno,
+                telefono,
+                direccion,
+                deudaTotal,
+                estatus
+            });
+
+            alert('Deudor guardado con éxito');
+        });
+    </script>
+</body>
+</html>
