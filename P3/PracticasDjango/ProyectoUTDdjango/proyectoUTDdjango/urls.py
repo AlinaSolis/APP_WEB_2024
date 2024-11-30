@@ -17,14 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from mainapp import views
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',include('mainapp.urls'))
-]
-
 from django.conf.urls import handler404
 from mainapp import views
+from django.conf import settings
 
 #handler404 = views.redireccion_404
 handler404 = views.error404_2
+#ruta imagenes
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('mainapp.urls')),
+    path('',include('articulos.urls'))
+]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

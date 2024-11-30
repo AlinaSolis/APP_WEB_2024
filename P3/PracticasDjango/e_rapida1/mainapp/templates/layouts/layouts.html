@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {% block tittle %}
-        {% comment "" %}
-            aqui va el contenido del bloque tittle
-        {% endcomment %}
-        {% endblock tittle %}
+        {% block title %}{% endblock title %}|Django Proyecto UTD
     </title>
+    <link rel="stylesheet" href="{% ..stactic 'css/estilos.css' %}" type="text/css">
 </head>
 <body>
-    <h1>Bienvenido a mi app web en Django</h1>
+    <header>
+        <div id="logotipo">
+            <img src="{% static "img/logodjango.webp" %}" alt="Imagen Django" title="Django">
+            <h1>Examen Web</h1>
+        </div>
+    </header>
+</head>
+<body>
+    <h1>Bienvenido a mi app web en Django </h1>
+    <h1> A</h1>
     <h2>Desarrollo web con python y Django</h2>
     <nav>
         <lu>
